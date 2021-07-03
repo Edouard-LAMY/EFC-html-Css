@@ -1,0 +1,51 @@
+/* LES ETUDIANTS */
+
+.les-etudiants{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.title-les-etudiants{
+    font-size: 4.8rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin-bottom: 4rem;
+    color: #000;
+}
+
+.item-etudiant{
+    margin-bottom: 2.3rem;
+}
+
+.title-item, .link-etudiant{
+    margin-top: 2rem;
+}
+
+.etudiant-link{
+    color: var(--orange);
+    transition: .3s;
+}
+
+.etudiant-link {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.etudiant-link:hover, .etudiant-link:focus, .etudiant-link:active {
+    color: var(--orangehoverlight);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+@media screen and (max-width: 36em){
+    .title-les-etudiants{
+        font-size: 3.5rem;
+    }
+}

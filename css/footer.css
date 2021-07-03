@@ -1,0 +1,88 @@
+/* FOOTER */
+
+footer{
+    background-color: var(--orange);
+    padding: 4rem 0;
+}
+
+footer li{
+    list-style: none;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+footer ul{
+    padding-left: 0;
+}
+
+.title-footer{
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+address{
+    margin-bottom: 0;
+}
+
+address a{
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+address a:hover{
+    background-color: var(--orangehover);
+    color: #fff;
+}
+
+.mention-item:first-child{
+    margin-right: 2rem;
+}
+
+.mention-item a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.mention-item a:hover{
+    border-bottom: 0.2rem solid #fff;
+}
+
+.reseau img{
+    height: 3.6rem;
+}
+
+.politique{
+    padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 62em){
+    footer{
+        text-align: center;
+    }
+    .mention-list{
+        margin-top: 2rem;
+        justify-content: center !important;
+    }
+    .reseau{
+        margin-top: 2rem;
+        justify-content: center !important;     
+    }
+    .reseau a:not(:last-child){
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 18em) and (max-width: 75em){
+    .title-footer {
+        font-size: 1.6rem;
+    }
+    footer li, address a, .mention-item a{
+        font-size: 1.4rem;
+    }
+    .reseau img{
+        height: 2rem;
+    }
+}

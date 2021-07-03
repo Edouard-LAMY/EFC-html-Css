@@ -1,0 +1,67 @@
+/* CONTACT */
+
+.contact{
+    padding-bottom: 4rem;
+}
+
+.form-control{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: italic;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+label{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.btn-contact{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    background-color: var(--orange);
+    border: none;
+    padding: .6rem 2.5rem;
+    transition: .3s;
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.btn-contact span{
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.btn-contact:hover, .btn-contact:focus, .btn-contact:active {
+    background-color: var(--orangehover);
+    color: #fff;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+@media screen and (max-width: 36em){
+    .form-control, label{
+        font-size: 1.6rem;
+    }
+    .btn-contact{
+        font-size: 2rem;
+        padding: .6rem 2rem;
+    }
+    .btn-contact span{
+        margin-left: 1rem;
+    }
+}

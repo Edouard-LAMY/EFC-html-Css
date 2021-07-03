@@ -1,0 +1,41 @@
+/* ACTUALITE-INFO */
+
+.actualite-info{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.art-actualite-info{
+    border: none;
+}
+
+.card-title-actualite-info{
+    font-size: 4.8rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.text-actu-info{
+    margin-top: 2rem;
+}
+
+.card-text-info{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    line-height: 3rem;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 36em){
+    .card-title-actualite-info{
+        font-size: 3.5rem;
+    }
+    .card-text-info{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+}

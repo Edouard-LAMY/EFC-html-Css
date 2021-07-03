@@ -1,0 +1,394 @@
+/* montserrat-regular*/
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  
+/* montserrat-500 */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  
+/* montserrat-600 */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  
+/* montserrat-700 */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* raleway-600 */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/raleway-v18-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/raleway-v18-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  
+/* raleway-700 */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/raleway-v18-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/raleway-v18-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Typography */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+:root{
+    --orange: #FD7E37;
+    --orangehover: #a84e1a;
+    --orangehoverlight: #fda471;
+    --date: #663014;
+}
+
+
+/* HERO */
+
+.hero{
+    background-image: url(../image/Photo\ arrière-plan@2x.webp);
+    background-size: cover;
+    background-position: center;
+    padding-top: 24rem;
+    padding-bottom: 12rem;
+}
+
+.bg-opacity{
+    padding: 2.3rem;
+    background-color: #00000080;
+    opacity: 1;
+}
+
+.bg-opacity h1{
+    margin-bottom: 3rem;
+    font-size: 7.2rem;
+    text-shadow: 2px 2px 6px #00000080;
+}
+
+.bg-opacity a{
+    padding: 2rem 3rem;
+    background-color: var(--orange);
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Raleway';
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    transition: .3s;
+}
+
+.bg-opacity a{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.bg-opacity a:hover, .bg-opacity a:focus, .bg-opacity a:active {
+    background-color: var(--orangehover);
+    color: #fff;
+    border-radius: 2rem;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.bg-opacity a:focus{
+    border: .2rem solid blue;
+}
+
+@media screen and (max-width: 36em){
+    .bg-opacity h1{
+        font-size: 4rem;
+    }
+    .bg-opacity a{
+        font-size: 2rem;
+    }
+    .bg-opacity{
+        text-align: center !important;
+    }
+}
+
+@media screen and (min-width: 36em) and (max-width: 75em){
+    .bg-opacity h1{
+        font-size: 4.8rem;
+    }
+    .bg-opacity a{
+        font-size: 2rem;
+    }
+}
+
+
+/* ACTUALITE */
+
+.actu{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.title-actu{
+    font-size: 4.8rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.art{
+    padding: 0;
+    border: none;
+    border-radius: 1rem !important;
+    background-color: #fff;
+    box-shadow: 0px 0px 48px #00000029;
+}
+
+.art-actualite{
+    margin-bottom: 4rem;
+}
+
+.art img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-bottom: 2.4rem;
+}
+
+.card-body span, .card-body .time-p{
+    color: var(--date);
+}
+
+.card-body span{
+    margin-right: .8rem;
+}
+
+.card-body{
+    padding: 0;
+}
+
+.time{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+.time p{
+    margin: 0;
+}
+
+.btn-lire{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    background-color: var(--orange);
+    border: none;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 100%;
+    padding: .5rem 0;
+    transition: .3s;
+}
+
+.btn-lire:hover{
+    background-color: var(--orangehover);
+}
+
+.btn-lire span{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.card-title{
+    font-size: 2.4rem;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2.4rem;
+    line-height: 3.6rem;
+}
+
+.card-text{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2.4rem;
+    line-height: 3rem;
+}
+
+@media screen and (max-width: 36em){
+    .title-actu{
+        font-size: 3.5rem;
+    }
+    .card-title{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+    .card-text{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+    .btn-lire{
+        font-size: 2rem;
+    }
+    .time{
+        font-size: 1.4rem;
+    }
+}
+
+
+/* ETUDIANT */
+
+.etudiant{
+    padding-top: 4rem;
+    padding-bottom: 4.3rem;
+    background-color: var(--orange);
+}
+
+.title-etudiant{
+    font-size: 4.8rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+.title-item{
+    font-size: 2.4rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.title-item, .link-etudiant{
+    margin-top: 2rem;
+}
+
+.link-etudiant{
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.link-etudiant:hover, .link-etudiant:focus, .link-etudiant:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+@media screen and (max-width: 36em){
+    .title-etudiant{
+        font-size: 3.5rem;
+    }
+    .title-item{
+        font-size: 2rem;
+    }
+}
+
+
+/* MODULE */
+
+.module{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.title-module{
+    font-size: 4.8rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.card-title-module{
+    font-size: 2.4rem;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    line-height: 3.6rem;
+}
+
+.card-text-module{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    line-height: 3rem;
+}
+
+@media screen and (max-width: 36em){
+    .title-module{
+        font-size: 3.5rem;
+    }
+    .card-title-module{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+    .card-text-module{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+}

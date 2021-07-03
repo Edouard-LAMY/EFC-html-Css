@@ -1,0 +1,91 @@
+
+/* FORMATION */
+
+.formation{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.title-formation{
+    font-size: 4.8rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.card-title-formation{
+    font-size: 2.4rem;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    line-height: 3.6rem;
+}
+
+.text-formation{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    line-height: 3rem;
+}
+
+.card-text-formation{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    line-height: 3rem;
+}
+
+.art-formation{
+    margin-bottom: 3.5rem;
+}
+
+.nav-pagination-formation{
+    margin-top: 4rem;
+}
+
+.page-link{
+    border: .1rem solid var(--orange);
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: .5rem !important;
+    color: var(--orange);
+}
+
+.page-link:hover{
+    color: #fff;
+    background-color: var(--orange);
+}
+
+.page-item:not(:last-child){
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 36em){
+    .title-formation{
+        font-size: 3.5rem;
+    }
+    .card-title-formation{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+    .text-formation{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+    .card-text-formation{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+}
